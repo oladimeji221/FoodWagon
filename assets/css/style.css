@@ -34,31 +34,85 @@
   }
 }
 
-.discount-badge {
+ .discount-badge {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: rgba(241, 114, 40, 1);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 14px;
+  bottom: 10px;   /* bottom aligned */
+  left: 10px;     /* left aligned */
+  background: #FFB000;
+  color: #fff;
+  border-radius: 8px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  padding: 6px 12px;
 }
 
 .discount-badge .main {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
-  margin-right: 4px;
+  margin-right: 6px;
+  line-height: 1;
 }
 
 .discount-badge .sub {
   display: flex;
   flex-direction: column;
-  font-size: 10px;
-  line-height: 1;
+  line-height: 1.1;
+  font-size: 13px;
+  text-transform: capitalize;
 }
+
+.discount-badge .percent {
+  font-weight: bold;
+}
+
+
+    /* --- Card Styling --- */
+    .product-card {
+      border: none;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      border-radius: 14px 14px 0 0;
+    }
+
+    .product-card .card-body {
+  text-align: left;   /* 👈 aligns all text to left */
+  padding: 15px;
+}
+
+.product-card .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+
+    /* --- Bottom Button --- */
+    .product-card .deal-btn {
+      display: block;
+      width: 50%;
+      background-color:rgba(241, 114, 40, 0.2);
+      color:rgba(241, 114, 40, 1);
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+
+    .product-card .deal-btn:hover {
+      background-color: #d9601f;
+      color: #fff;
+    }
 
 
 .how-it-works-section {
