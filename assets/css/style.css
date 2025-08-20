@@ -214,4 +214,153 @@ background: linear-gradient(
       background-color: transparent;
       border-bottom: 2px solid #F17228;
     }
+  /*popular items*/
+/* Ensure carousel images are smaller and nicely sized */
+.owl-carousel .item .card {
+  width: 100%;
+  max-width: 150px; /* Controls width per card */
+  margin: auto;
+
+}
+
+.owl-carousel .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+/* Button style */
+.order-btn {
+  background-color: #F17228;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+}
+
+.order-btn:hover {
+  background-color: #d85e1b;
+}
+
+/* Space around the cards in the carousel */
+.owl-carousel .item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Responsive tweaks if needed */
+@media (max-width: 576px) {
+  .owl-carousel .card-img-top {
+    height: 100px;
+  }
+}
+/*featured resturant*/
+  body {
+      background: white;
+      color: black;
+    }
+    .restaurant-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      background: #fff;
+      transition: transform 0.2s;
+    }
+    .restaurant-card:hover {
+      transform: translateY(-5px);
+    }
+    .restaurant-img {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .badge-group {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 6px;
+    }
+    .badge-custom {
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .badge-discount {
+      background: #ff7043;
+      color: #fff;
+    }
+    .badge-fast {
+      background: #fbc02d;
+      color: #fff;
+    }
+    .restaurant-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+    }
+    .restaurant-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+    .restaurant-name {
+      font-weight: 700;
+      font-size: 1rem;
+      margin: 0;
+      color: #000;
+    }
+    .rating {
+      color: #fbc02d;
+      font-size: 0.9rem;
+    }
+    .progress-btn {
+      background:rgba(241, 114, 40, 0.2);
+      color:rgba(241, 114, 40, 1);
+      width: 132px;
+      height: 42px;
+      margin-bottom: 8px;
+      left: 16px;
+      right: 16px;
+      top: 8px;
+      radius: 16px;
+      cursor: pointer;
+    }
+    .view-all {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 30px;
+      border-radius: 15px;
+      margin: 30px auto 0;
+      box-shadow: 0 4px 15px rgba(249,115,22,0.5);
+      text-decoration: none;
+    }
+        /*color customizations*/:root {
+  --bs-green-custom: #79B93C;
+  --bs-green-custom-rgba: rgba(121, 185, 60, 0.2);
+}
+.bg-green-custom {
+  background-color: var(--bs-green-custom) !important;
+}
+.bg-green-custom-light {
+  background-color: var(--bs-green-custom-rgba) !important;
+}
+.text-green-custom {
+  color: var(--bs-green-custom) !important;
+}
+.border-green-custom {
+  border-color: var(--bs-green-custom) !important;
+}
 
